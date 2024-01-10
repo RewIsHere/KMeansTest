@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&display=swap');
+body {
+    background-color: #ffffff; /* Color de fondo rosa claro */
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #ffffff; /* Color de fondo rosa oscuro */
+    padding: 10px 0;
+    border: #000 1px;
+  }
+  /* ... (tu estilo actual) ... */
+
+  header .navbar-brand {
+    color: #ff0077;
+    font-size: 24px;
+    margin-right: 20px; /* Añadido para separar el logo de los enlaces */
+  }
+
+  header .navbar-nav .nav-link {
+    color: #04a3ec; /* Cambiado a azul */
+    font-size: 15px;
+    margin-left: 2px;
+  }
+  
+  header .navbar-nav .nav-link:hover {
+    color:  #ff3794; /* Color del texto al pasar el mouse sobre los enlaces */
+  }
+
+  #sidebar-container {
+    min-height: 100vh;
+    background-color: #ffffff; /* Color de fondo rosa oscuro */
+    padding: 0;
+    color: #ffffff; /* Color del texto en la barra lateral */
+    width: 80px; /* Ancho reducido de la barra lateral */
+    position: fixed;
+    transition: width 0.3s;
+    overflow-x: hidden;
+  }
+
+  #sidebar-container .list-group-item {
+    background-color: #ffffff; /* Color de fondo de los elementos de la barra lateral */
+    border: none;
+    color: #ffffff; /* Color del texto de los elementos de la barra lateral */
+    text-align: center; /* Alineación del texto en el centro */
+    padding: 10px 0;
+  }
+
+  #sidebar-container .list-group-item:hover {
+    background-color:  #ff0077;  /* Color de fondo al pasar el mouse sobre los elementos de la barra lateral */
+  }
+
+  #sidebar-container .list-group-item i {
+    font-size: 24px;
+    color: #000; /* Tamaño de la fuente de los iconos */
+  }
+  
+  #sidebar-btn {
+    font-size: 20px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+
+  @media (max-width: 767px) {
+    #sidebar-container {
+      width: 100%; /* Barra lateral ocupa el 100% del ancho en pantallas pequeñas */
+    }
+    #main-content {
+      margin-left: 0; /* Contenido principal a la izquierda en pantallas pequeñas */
+    }
+    #sidebar-btn {
+      left: 10px;
+    }
+  }
+  /* ... (tu estilo actual) ... */
+
+  #main-content {
+    transition: margin-left 0.3s;
+    padding: 16px;
+    margin-left: 80px;
+  }
+
+  #edit-nickname-form {
+    width: 50%; /* Ocupa el 100% del ancho del main-content */
+    background-color: #ffffff;
+    padding: 20px;
+
+  }
+
+  #change-password-form{
+    width: 50%; /* Ocupa el 100% del ancho del main-content */
+    background-color: #ffffff;
+    padding: 20px;
+
+  }  
+
+  #add-phone-form{
+    width: 50%; /* Ocupa el 100% del ancho del main-content */
+    background-color: #ffffff;
+    padding: 20px;
+
+  }
+  
+  #edit-nickname-form h2 {
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  
+  #edit-nickname-form p {
+    font-family: 'Exo', sans-serif;
+  }
+
+  /* Estilo para la sección de productos destacados */
+  #featured-products {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+  }
+
+  /* Estilo para la sección de testimonios */
+  #testimonials {
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+  }
+
+  /* Estilo para los íconos de redes sociales */
+  .navbar-nav .nav-link i {
+    font-size: 20px;
+    color: #04a3ec;
+  }
+
+  /* Estilo para el footer */
+  footer {
+    background-color: #ff0077;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+ 
+  

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&display=swap');
+
+body {
+  background-color: #ffffff; /* Color de fondo rosa claro */
+  margin: 0;
+  padding: 0;
+}
+  header {
+    background-color: #ffffff; /* Color de fondo rosa oscuro */
+    padding: 10px 0;
+    border: #000 1px;
+  }
+  /* ... (tu estilo actual) ... */
+
+  header .navbar-brand {
+    color: #ff0077;
+    font-size: 30px;
+    margin-right: 20px; /* Añadido para separar el logo de los enlaces */
+  }
+
+  header .navbar-nav .nav-link {
+    color: #04a3ec; /* Cambiado a azul */
+    font-size: 15px;
+    margin-left: 2px;
+  }
+  
+  header .navbar-nav .nav-link:hover {
+    color:  #ff3794; /* Color del texto al pasar el mouse sobre los enlaces */
+  }
+
+  #sidebar-container {
+    min-height: 100vh;
+    background-color: #ffffff; /* Color de fondo rosa oscuro */
+    padding: 0;
+    color: #ffffff; /* Color del texto en la barra lateral */
+    width: 80px; /* Ancho reducido de la barra lateral */
+    position: fixed;
+    transition: width 0.3s;
+    overflow-x: hidden;
+  }
+
+  #sidebar-container .list-group-item {
+    background-color: #ffffff; /* Color de fondo de los elementos de la barra lateral */
+    border: none;
+    color: #ffffff; /* Color del texto de los elementos de la barra lateral */
+    text-align: center; /* Alineación del texto en el centro */
+    padding: 10px 0;
+  }
+
+  @media (max-width: 767px) {
+    #sidebar-container {
+      width: 100%; /* Barra lateral ocupa el 100% del ancho en pantallas pequeñas */
+    }
+    #main-content {
+      margin-left: 0; /* Contenido principal a la izquierda en pantallas pequeñas */
+    }
+    #sidebar-btn {
+      left: 10px;
+    }
+  }
+  /* ... (tu estilo actual) ... */
+
+  #main-content {
+    transition: margin-left 0.3s;
+    padding: 16px;
+    margin-left: 500px;
+  }
+
+
+  /* Estilo para los íconos de redes sociales */
+  .navbar-nav .nav-link i {
+    font-size: 20px;
+    color: #04a3ec;
+  }
+
+  /* Estilo para el footer */
+  footer {
+    background-color: #ff0077;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  .card {
+    background: #222;
+    border: 1px solid #dd2476;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+    margin-right: 5px;
+  }
+  
+  .btn {
+    border: 5px solid;
+    border-image-slice: 1;
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source:  var(--gradient) !important; 
+    text-decoration: none;
+    transition: all .4s ease;
+  }
+  
+  .btn:hover, .btn:focus {
+        background: var(--gradient) !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: #fff !important;
+    border: 5px solid #fff !important; 
+    box-shadow: #222 1px 0 10px;
+    text-decoration: underline;
+  }
+
+  button .btn{
+    background-color: #04a3ec;
+    color:#000;
+  }
